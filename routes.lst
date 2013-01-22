@@ -1,0 +1,110 @@
+     show_search_switches GET    /switches/show_search(.:format)           switches#show_search
+    render_field_switches GET    /switches/render_field(.:format)          switches#render_field
+            mark_switches POST   /switches/mark(.:format)                  switches#mark
+     show_export_switches GET    /switches/show_export(.:format)           switches#show_export
+          export_switches POST   /switches/export(.:format)                switches#export
+               row_switch GET    /switches/:id/row(.:format)               switches#row
+     update_column_switch POST   /switches/:id/update_column(.:format)     switches#update_column
+      render_field_switch GET    /switches/:id/render_field(.:format)      switches#render_field
+              mark_switch POST   /switches/:id/mark(.:format)              switches#mark
+ edit_associated_switches GET    /switches/edit_associated(.:format)       switches#edit_associated
+    new_existing_switches GET    /switches/new_existing(.:format)          switches#new_existing
+    add_existing_switches POST   /switches/add_existing(.:format)          switches#add_existing
+   edit_associated_switch GET    /switches/:id/edit_associated(.:format)   switches#edit_associated
+   add_association_switch GET    /switches/:id/add_association(.:format)   switches#add_association
+  destroy_existing_switch DELETE /switches/:id/destroy_existing(.:format)  switches#destroy_existing
+                 switches GET    /switches(.:format)                       switches#index
+                          POST   /switches(.:format)                       switches#create
+               new_switch GET    /switches/new(.:format)                   switches#new
+              edit_switch GET    /switches/:id/edit(.:format)              switches#edit
+                   switch GET    /switches/:id(.:format)                   switches#show
+                          PUT    /switches/:id(.:format)                   switches#update
+                          DELETE /switches/:id(.:format)                   switches#destroy
+    show_search_statports GET    /statports/show_search(.:format)          statports#show_search
+   render_field_statports GET    /statports/render_field(.:format)         statports#render_field
+           mark_statports POST   /statports/mark(.:format)                 statports#mark
+    show_export_statports GET    /statports/show_export(.:format)          statports#show_export
+         export_statports POST   /statports/export(.:format)               statports#export
+             row_statport GET    /statports/:id/row(.:format)              statports#row
+   update_column_statport POST   /statports/:id/update_column(.:format)    statports#update_column
+    render_field_statport GET    /statports/:id/render_field(.:format)     statports#render_field
+            mark_statport POST   /statports/:id/mark(.:format)             statports#mark
+edit_associated_statports GET    /statports/edit_associated(.:format)      statports#edit_associated
+   new_existing_statports GET    /statports/new_existing(.:format)         statports#new_existing
+   add_existing_statports POST   /statports/add_existing(.:format)         statports#add_existing
+ edit_associated_statport GET    /statports/:id/edit_associated(.:format)  statports#edit_associated
+ add_association_statport GET    /statports/:id/add_association(.:format)  statports#add_association
+destroy_existing_statport DELETE /statports/:id/destroy_existing(.:format) statports#destroy_existing
+                statports GET    /statports(.:format)                      statports#index
+                          POST   /statports(.:format)                      statports#create
+             new_statport GET    /statports/new(.:format)                  statports#new
+            edit_statport GET    /statports/:id/edit(.:format)             statports#edit
+                 statport GET    /statports/:id(.:format)                  statports#show
+                          PUT    /statports/:id(.:format)                  statports#update
+                          DELETE /statports/:id(.:format)                  statports#destroy
+       show_search_models GET    /models/show_search(.:format)             models#show_search
+      render_field_models GET    /models/render_field(.:format)            models#render_field
+              mark_models POST   /models/mark(.:format)                    models#mark
+       show_export_models GET    /models/show_export(.:format)             models#show_export
+            export_models POST   /models/export(.:format)                  models#export
+                row_model GET    /models/:id/row(.:format)                 models#row
+      update_column_model POST   /models/:id/update_column(.:format)       models#update_column
+       render_field_model GET    /models/:id/render_field(.:format)        models#render_field
+               mark_model POST   /models/:id/mark(.:format)                models#mark
+   edit_associated_models GET    /models/edit_associated(.:format)         models#edit_associated
+      new_existing_models GET    /models/new_existing(.:format)            models#new_existing
+      add_existing_models POST   /models/add_existing(.:format)            models#add_existing
+    edit_associated_model GET    /models/:id/edit_associated(.:format)     models#edit_associated
+    add_association_model GET    /models/:id/add_association(.:format)     models#add_association
+   destroy_existing_model DELETE /models/:id/destroy_existing(.:format)    models#destroy_existing
+                   models GET    /models(.:format)                         models#index
+                          POST   /models(.:format)                         models#create
+                new_model GET    /models/new(.:format)                     models#new
+               edit_model GET    /models/:id/edit(.:format)                models#edit
+                    model GET    /models/:id(.:format)                     models#show
+                          PUT    /models/:id(.:format)                     models#update
+                          DELETE /models/:id(.:format)                     models#destroy
+      show_search_streets GET    /streets/show_search(.:format)            streets#show_search
+     render_field_streets GET    /streets/render_field(.:format)           streets#render_field
+             mark_streets POST   /streets/mark(.:format)                   streets#mark
+      show_export_streets GET    /streets/show_export(.:format)            streets#show_export
+           export_streets POST   /streets/export(.:format)                 streets#export
+               row_street GET    /streets/:id/row(.:format)                streets#row
+     update_column_street POST   /streets/:id/update_column(.:format)      streets#update_column
+      render_field_street GET    /streets/:id/render_field(.:format)       streets#render_field
+              mark_street POST   /streets/:id/mark(.:format)               streets#mark
+  edit_associated_streets GET    /streets/edit_associated(.:format)        streets#edit_associated
+     new_existing_streets GET    /streets/new_existing(.:format)           streets#new_existing
+     add_existing_streets POST   /streets/add_existing(.:format)           streets#add_existing
+   edit_associated_street GET    /streets/:id/edit_associated(.:format)    streets#edit_associated
+   add_association_street GET    /streets/:id/add_association(.:format)    streets#add_association
+  destroy_existing_street DELETE /streets/:id/destroy_existing(.:format)   streets#destroy_existing
+                  streets GET    /streets(.:format)                        streets#index
+                          POST   /streets(.:format)                        streets#create
+               new_street GET    /streets/new(.:format)                    streets#new
+              edit_street GET    /streets/:id/edit(.:format)               streets#edit
+                   street GET    /streets/:id(.:format)                    streets#show
+                          PUT    /streets/:id(.:format)                    streets#update
+                          DELETE /streets/:id(.:format)                    streets#destroy
+       show_search_cities GET    /cities/show_search(.:format)             cities#show_search
+      render_field_cities GET    /cities/render_field(.:format)            cities#render_field
+              mark_cities POST   /cities/mark(.:format)                    cities#mark
+       show_export_cities GET    /cities/show_export(.:format)             cities#show_export
+            export_cities POST   /cities/export(.:format)                  cities#export
+                 row_city GET    /cities/:id/row(.:format)                 cities#row
+       update_column_city POST   /cities/:id/update_column(.:format)       cities#update_column
+        render_field_city GET    /cities/:id/render_field(.:format)        cities#render_field
+                mark_city POST   /cities/:id/mark(.:format)                cities#mark
+   edit_associated_cities GET    /cities/edit_associated(.:format)         cities#edit_associated
+      new_existing_cities GET    /cities/new_existing(.:format)            cities#new_existing
+      add_existing_cities POST   /cities/add_existing(.:format)            cities#add_existing
+     edit_associated_city GET    /cities/:id/edit_associated(.:format)     cities#edit_associated
+     add_association_city GET    /cities/:id/add_association(.:format)     cities#add_association
+    destroy_existing_city DELETE /cities/:id/destroy_existing(.:format)    cities#destroy_existing
+                   cities GET    /cities(.:format)                         cities#index
+                          POST   /cities(.:format)                         cities#create
+                 new_city GET    /cities/new(.:format)                     cities#new
+                edit_city GET    /cities/:id/edit(.:format)                cities#edit
+                     city GET    /cities/:id(.:format)                     cities#show
+                          PUT    /cities/:id(.:format)                     cities#update
+                          DELETE /cities/:id(.:format)                     cities#destroy

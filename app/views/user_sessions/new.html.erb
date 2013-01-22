@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Реестр</title>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body class="wide large_head with_footer" data-color="white" style="margin:0px;">
+    <div id="head">
+      <div id="head_inner">
+        <div class="viewport">
+          <div id="left">
+
+          <div class="line">
+              <div class="segment">
+                <a href="http://adamant.ua" class="service_banner"><span class="makandra">Реестр коммутаторов</span><span class="cards"></span></a>
+              </div>
+            </div>
+          </div>
+          <div id="right">
+
+            <div class="line">
+              <div class="segment">
+		<%= image_tag("icon_app.png", :height => "100%", :width => "100%") %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Begin Center -->
+    <div id="main-block">
+      <div class="reg gray">
+        <h2>Авторизация</h2>
+          <ul>
+            <li>
+              <%= form_for @user_session, :url => {:action => "create"} do |f| %>
+              <%= f.error_messages %>
+              <%= f.label :login, "Логин" %>
+              <%= f.text_field :login, :class => "formfield", :placeholder => ' введите ваш логин'%>
+            </li>
+            <li>
+              <%= f.label :password, "Пароль" %>
+              <%= f.password_field :password, :class => "formfield", :placeholder => ' введите ваш пароль' %>
+            </li>
+            <li>
+              <%= f.submit "Вход", :class => "red-button" %>
+              <% end %>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <!-- End Center -->
+
+    <div id="tail"><!-- Самый нижний footer-->
+      <p>adamant &copy; 2012</p>
+      <p style="float:left;padding-left:10px;color:bisque;">Development Edition: lugatex@yahoo.com</p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ip: MyString
+  g1cli: 1
+  g1free: 1
+  g1leased: 1
+  g1trunk: 1
+  pbad: 1
+  pbadlist: MyString
+  pfree: 1
+  phome: 1
+  pleased: 1
+  sigport: 1
+  model_id: 1
+  city_id: 1
+  street_id: 1
+
+two:
+  ip: MyString
+  g1cli: 1
+  g1free: 1
+  g1leased: 1
+  g1trunk: 1
+  pbad: 1
+  pbadlist: MyString
+  pfree: 1
+  phome: 1
+  pleased: 1
+  sigport: 1
+  model_id: 1
+  city_id: 1
+  street_id: 1

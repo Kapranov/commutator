@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Реестр коммутаторов</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery.maskedinput" %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript>">
+    $(document).ready(function () {
+      $("your_text_field_id").val("");
+    });
+  </script>
+</head>
+  <%- if current_user %>
+    <div style="padding-top: 10pt;padding-bottom: 10pt;">
+      <%= link_to "Авторизация: #{current_user.email}", switches_path, :class => "btn-green" %>
+      <%= link_to "Выход", logout_path, :class => "exit-button" %>
+      <%= link_to "Коммутаторы", switches_path, :class => "blue-button" %>
+      <%= link_to "Порты", statports_path, :class => "blue-button" %>
+      <%= link_to "Модели", models_path, :class => "blue-button" %>
+      <%= link_to "Улицы", streets_path, :class => "blue-button" %>
+      <%= link_to "Города", cities_path, :class => "blue-button" %>
+      <%= link_to "Сеть ШПД", switches_path, :onclick => "javascript:window.open('http://angel.adamant.net:8080/','popup');", :class => "blue-button" %>
+      <%= link_to "Ремонт", switches_path, :onclick => "javascript:window.open('http://10.20.20.234/forms/','popup');", :class => "blue-button" %>
+      <%= link_to "Мантис", switches_path, :onclick => "javascript:window.open('https://office.adamant.ua/mantis/','popup');", :class => "blue-button" %>
+    </div>
+  <%- else %>
+  <!-- <%= link_to "Вход", new_user_session_path %> -->
+<%- end %>
+<body>
+<div>
+<div class="nonborder_yield">
+<%= yield %>
+</div></div>
+</body>
+</html
